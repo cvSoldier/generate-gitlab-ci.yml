@@ -1,0 +1,31 @@
+{
+  "name": "generate-gitlab-ci.yml",
+  "version": "0.0.1",
+  "description": "generate gitlab-ci.yml",
+  "main": "index.js",
+  "bin": {
+    "test-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvSoldier/generate-gitlab-ci.yml.git"
+  },
+  "keywords": [
+    "gitlab",
+    "ci"
+  ],
+  "author": "cvSoldier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvSoldier/generate-gitlab-ci.yml/issues"
+  },
+  "homepage": "https://github.com/cvSoldier/generate-gitlab-ci.yml#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.0",
+    "inquirer": "^8.2.4"
+  }
+}
