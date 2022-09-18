@@ -40,23 +40,19 @@ program
       {
         type:'confirm',
         message:'是否需要自动化打签？',
-        name:'notifyAutoTag',
+        name:'autoTag',
       },
       {
-        type:'list',
-        message:'选择oss账号：',
-        name:'ossAccount',
-        choices:[
-            "ec",
-            "sx",
-            "cx"
-        ]
-     }
+        type:'input',
+        message:'输入oss config路径：',
+        name:'ossConfig',
+      }
     ]
     //获取用户的输入结果
-    inquirer.prompt(prompList).then(answers=>{
-      console.log(answers);//用户输入结果
-      generateFile()
+    inquirer.prompt(prompList).then(answers => {
+      const fileContent = generateFile(answers)
+      const filePath = '.gitlab-ci.yml'
+      fs.writeFileSync(filePath, fileContent)
     })
   })
 
