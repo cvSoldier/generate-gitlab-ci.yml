@@ -5,7 +5,7 @@ var program = require('commander');
 
 // ^9 以上的inquirer 和 ^5 chalk 不支持 require
 var inquirer = require('inquirer');
-var chalk = require('chalk');
+
 const generateFile = require('../src/template.js')
 
 program
