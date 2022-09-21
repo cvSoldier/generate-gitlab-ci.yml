@@ -4,7 +4,7 @@
   "description": "generate gitlab-ci.yml",
   "main": "index.js",
   "bin": {
-    "test-cli": "./bin/index.js"
+    "gen-ci-yml": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
