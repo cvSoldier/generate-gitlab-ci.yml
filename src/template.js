@@ -133,7 +133,7 @@ module.exports = function (answers) {
     const indexEnd = templateFile.indexOf('#notifyEnd')
     templateFile = templateFile.slice(0, indexBegin) + templateFile.slice(indexEnd + 11)
   } else {
-    templateFile.replace('[webhookKey]', answers.webhookKey || '[webhookKey]' )
+    templateFile = templateFile.replace('[webhookKey]', answers.webhookKey || '[webhookKey]' )
   }
 
   // 不要打签
