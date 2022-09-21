@@ -1,4 +1,6 @@
 # generate-gitlab-ci.yml
+<a href="https://www.npmjs.com/package/generate-gitlab-ci.yml"><img src="https://img.shields.io/npm/v/generate-gitlab-ci.yml.svg?sanitize=true" alt="Version"></a>  
+
 一个可以生成gitlab-ci.yml文件的cli工具
 
 ## 安装
