@@ -9,7 +9,7 @@ var inquirer = require('inquirer');
 const generateFile = require('../src/template.js')
 
 program
-  .version('1.0.0', '-v, --version')
+  .version(`${require('../package').version}`, '-v, --version')
   .command('create')
   .alias('c')
   .description('根据模版创建.gitlab-ci.yml')
